@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -31,8 +34,65 @@
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
+
+    <ul class="collapsible">
+        <li class="active">
+            <div class="collapsible-header" id="about"><i class="material-icons">perm_identity</i>About Me</div>
+            <div class="collapsible-body">
+                <span>
+
+                    <div class="row">
+                        <div class="col s2 m2">
+
+                        </div>
+                        <div class="col s8 m8">
+                            <br>
+                            <div class="card indigo darken-1 hoverable">
+                                <span class="card-title white-text center-align">&nbsp;&nbsp;About Me</span>
+                                <div class="card-image center-align">
+                                    <img src="images/slack-profile-pic.jpg">
+                                </div>
+                                <div class="card-content white-text center-align">
+                                    Hello! My name is Darryl Tolentino and I am a native Bay Area resident from San
+                                    Mateo County that is currently a student at UC Berkeley Extension for Web
+                                    Development. I work
+                                    primarily in Video
+                                    Game Development and hope to utilize the knowledge of Web Development to make me a
+                                    more
+                                    versatile coder to employers within the game industry.
+                                </div>
+                                <!-- <div class="card-action">
+                                          <a href="#">This is a link</a>
+                                          <a href="#">This is a link</a>
+                                        </div> -->
+                            </div>
+                            <div class="col s2 m2">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </span>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+    </ul>
+
 </body>
 <!--JavaScript at end of body for optimized loading-->
 <script type="text/javascript" src="js/materialize.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.collapsible').collapsible();
+    });
+</script>
 
 </html>
