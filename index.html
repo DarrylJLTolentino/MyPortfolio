@@ -75,12 +75,13 @@
                                     49ers(American football), San Francisco Giants(baseball), San Jose Sharks(hockey),
                                     and the Borussia Dortmund(soccer). Please contact me if you have any questions!
                                 </div>
-                                <div class="card-action">
-                                    <a href="https://www.linkedin.com/in/darryl-tolentino/"
-                                        target="_blank"><img src="images/LI-In-Bug.png" height="32px" width="32px"></a>
+                                <div class="card-action valign-wrapper">
+                                    <a href="https://www.linkedin.com/in/darryl-tolentino/" target="_blank"><img
+                                            src="images/LI-In-Bug.png" height="32px" width="32px"></a>
                                     <a href="https://github.com/DarrylJLTolentino" target="_blank"><img
                                             src="images/GitHub-Mark-32px.png"></a>
-                                    <a href="#" class="white-text">darryl.tolentino@gmail.com</a>
+                                    <a href="mailto:darryl.tolentino@gmail.com"
+                                        class="waves-effect waves-light btn red">Click here to send an email!</a>
                                 </div>
                             </div>
                         </div>
@@ -199,7 +200,9 @@
                                             class="material-icons">developer_mode</i></a>
                                 </div>
                                 <div class="card-content">
-                                    <p>This website features a train schedule which keeps track of train names, their destination, the frequency of the trains, the time of the next train arrival and how many minutes until the next train.</p>
+                                    <p>This website features a train schedule which keeps track of train names, their
+                                        destination, the frequency of the trains, the time of the next train arrival and
+                                        how many minutes until the next train.</p>
                                 </div>
                                 <div class="card-action">
                                     <a href="https://darryljltolentino.github.io/TrainScheduler/" target="_blank">Link
@@ -343,7 +346,8 @@
                                         They can also search using other ingredients or drinks as well.</p>
                                 </div>
                                 <div class="card-action">
-                                    <a class="pulse" href="https://vast-wave-25952.herokuapp.com/" target="_blank">Link to
+                                    <a class="pulse" href="https://vast-wave-25952.herokuapp.com/" target="_blank">Link
+                                        to
                                         Heroku environment</a>
                                 </div>
                             </div>
@@ -360,7 +364,11 @@
                                             class="material-icons">developer_mode</i></a>
                                 </div>
                                 <div class="card-content">
-                                    <p> "Jumble" is a coupled full stack SERN (Sequelize, Express, React, Node) application to help project managers and/or business owners stay on track. My colleagues Minori, Adam, Jake and myself created this app for a large user-base; regardless of what industry, project management is an integral part of helping businesses achieve their goals.</p>
+                                    <p> "Jumble" is a coupled full stack SERN (Sequelize, Express, React, Node)
+                                        application to help project managers and/or business owners stay on track. My
+                                        colleagues Minori, Adam, Jake and myself created this app for a large user-base;
+                                        regardless of what industry, project management is an integral part of helping
+                                        businesses achieve their goals.</p>
                                 </div>
                                 <div class="card-action">
                                     <a class="pulse" href="https://jumble-dash.herokuapp.com/" target="_blank">Link to
@@ -396,47 +404,6 @@
                 </span>
             </div>
         </li>
-        <li class="active">
-            <div class="collapsible-header" id="contact"><i class="material-icons">my_location</i>Contact</div>
-            <div class="collapsible-body">
-                <span>
-                    <div class="row">
-
-                        <div class="col s12 m12">
-                            <div class="card-panel hoverable white">
-                                <span>
-                                    <form>
-                                        <div class="row">
-                                            <div class="input-field col s6">
-                                                <input id="first_name" type="text" class="validate">
-                                                <label for="first_name">First Name</label>
-                                            </div>
-                                            <div class="input-field col s6">
-                                                <input id="last_name" type="text" class="validate">
-                                                <label for="last_name">Last Name</label>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="input-field col s12">
-                                                <input id="email" type="email" class="validate">
-                                                <label for="email">Email</label>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="input-field col s12">
-                                                <textarea id="textarea1" class="materialize-textarea"></textarea>
-                                                <label for="textarea1">Message</label>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <a class="waves-effect waves-light btn red">Submit</a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </span>
-            </div>
-        </li>
     </ul>
 
 </body>
@@ -451,6 +418,11 @@
     var instance = M.Collapsible.init(elem, {
         accordion: false
     });
+
+    function concat_form_values() {
+        "============================\n" +
+            document.getElementById("name").value + '\n' + document.getElementById("email").value + '\n' + document.getElementById("message").value
+    }
 </script>
 
 </html>
